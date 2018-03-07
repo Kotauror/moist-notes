@@ -28,7 +28,7 @@ window.addEventListener("load", function (event) {
     sendData(note);
   });
 
-});
+}); 
 
 function displayNotes() {
     document.getElementById('notes').innerHTML = "";

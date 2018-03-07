@@ -28,13 +28,13 @@ window.addEventListener("load", function (event) {
     sendData(note);
   });
 
-}); 
+});
 
 function displayNotes() {
     document.getElementById('notes').innerHTML = "";
     notepad.content.forEach(function (note) {
     var notes = document.getElementById('notes'),
-    noteschild = document.createElement('div');
+    noteschild = document.createElement('div', id='note');
     noteschild.innerHTML = note.content;
     notes.appendChild(noteschild)
   })
